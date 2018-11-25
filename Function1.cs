@@ -26,7 +26,7 @@ namespace FunctionAppCoreTest
             
 
             return (int.TryParse(value, out integerValue))
-                ? (ActionResult)new OkObjectResult($"Prime test result: {Function1.isPrime(integerValue)}")
+                ? (ActionResult)new OkObjectResult($"Prime number test result: {Function1.isPrime(integerValue)}")
                 : new BadRequestObjectResult("Please pass an integer parameter on the query string or in the request body");
         }
 
